@@ -1,0 +1,81 @@
+/* Style for the game board */
+body{
+    font-family:cursive;
+    background: linear-gradient(black,rgb(3, 44, 63));
+    width: 100%;
+    height: 100%;
+}
+h1{
+    margin-top: 1rem;
+    color: rgb(204, 243, 243);
+    text-align: center;
+}
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 0px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    color: aqua;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.horizontalline {
+    border-bottom: 1px solid #faf2f2;
+}
+
+.verticalline {
+    border-right: 1px solid #f1eaea;
+}
+
+/* Style for the "Reset Game" button */
+#resetButton {
+    margin: auto 0;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #29c3df;
+    color: rgb(8, 8, 8);
+    font-size: 20px;
+}
+
+/* Style for the winner */
+.winner {
+    background-color: #085e86; /* Light green */
+}
+
+/* Style for the tie message */
+.tie {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6f61; /* Reddish color */
+}
+.playerscore{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center; 
+}
+#resetButton:hover{
+    background: #011822;
+    color: white;
+}
+span{
+    color: aqua;
+}
